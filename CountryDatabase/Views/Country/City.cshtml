@@ -1,0 +1,15 @@
+@using CountryDatabase.Models;
+@using System.Collections.Generic;
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+    <h3>@Model.GetName()</h3>
+    <p>Population: @Model.GetPopulation()</p>
+    <p>Location: @Model.GetDistrict()</p>
+    <p>Code: @Model.GetCode()</p>
+    <br>
+    <a href = "/countries">Home</a>
+    <hr>
+</div>
